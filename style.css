@@ -71,7 +71,7 @@ body {
 }
 
 #button {
-    border: solid grey;
+    border: none;
     border-radius: 30px;
     outline: 0;
     padding: 20px 35px;

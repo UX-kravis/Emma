@@ -1,43 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EmmaWaernPortfolio</title>
-    <link rel="stylesheet" href="gridstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!--Överst i headern lägger jag navigationen.-->
-    <header class="navbar">
-        <nav>
-            <a class="active" href="index.html">Om mig</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="cv.html">Cv</a>
-        </nav>
+    <header>
+        <h1>Emma Waern <br /> UX-designer</h1>
     </header>
-    <!--Direkt under header med nav börjar main. Jag hittade inspiration om en "hero-image" och har hämtat koden på W3schools. -->
-    <main>
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1>Hej! Jag heter Emma Waern.</h1>
-                <h4>Jag är en UX-designer som brinner för tillgänglighet.</h4>
-                <button>Anställ mig</button>
+
+<!--Här har jag valt en navigation som vid mindre skärmstorlek blir till en hamburgermeny.-->
+    <div class="topnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <div class="container" onclick="animateIcon(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
-        </div>
-    </main>
-    <section>
-        <h2>Jag vill att det digitala samhället ska bli mer demokratiskt</h2>
-        <p>En kortare presentationstext här om mig och vad jag vill och kan, och så vidare...</p>
-    </section>
-    <!--I footern har jag mina kontaktuppgifter. Här kan ikoner läggas till senare.-->
-    <footer>
-        <ul class="list">
-            <li>E-post: xxxxxxxx</li>
-            <li>Telefon: xxxxxxxx</li>
-            <li><a class="linkedinlink" href="https://www.linkedin.com/in/emma-waern-426b6b213/">LinkedIn</a></li>
-        </ul>
-    </footer>
+        </a>
+        <a href="#about">About me</a>
+        <a href="#projects">Projects</a>
+        <a href="#footer">Contact</a>
+    </div>
+    <div id="about">
+        <p>My name is Emma and I'm studying UX-designer with requirements competence at Chas Academy. <br>
+            <br> I'm looking for an internship from october 2022 until april 2023.</p>
+        <img id="picture" src="IMG_0277.JPG" alt="picture of me" />
+    </div>
+    <div id="projects">
+        <h2>Soon I'm about to present some of my projects here...</h2>
+        <button id="button">Offer me internship</button>
+    </div>
+    <div id="footer">
+        <footer>
+            <h3>Please say hello</h3>
+            <img id="mailicon" src="envelope.png" alt="e-mail icon">
+            <li>E-mail: <a href="mailto:emma.p.waern@gmail.com">emma.p.waern@gmail.com</a></li>
+            <img id="phoneicon" src="telephone.png" alt="telephone icon">
+            <li>Phone: +4673 563 99 33</li>
+            <img id="linkedinicon" src="linkedin.png" alt="linkedin icon">
+            <li><a href="https://www.linkedin.com/in/emma-waern/" class="linkedinlink">Visit my profile at LinkedIn:</a></li>
+        </footer>
+    </div>
+
+    <script src="script.js">
+    </script>
 </body>
+
 </html>
